@@ -5,34 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <title>Ghibli App</title>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="sg-css.css">
 
-
 </head>
-
 <body>
-
 <h1 class="text-center">
     Studio Ghibli Films
 </h1>
-
-
 <main class="container">
-    <div class="search d-flex">
+    <div class="search">
         <form action="" method="get" class="search">
-            <label for="do-search">Movie Title</label>
-            <input type="text" name="name" id="search-term" placeholder="eg. Spirited Away" required>
-            <button id="do-search" class="search">Search</button>
+            <h4>Movie Title</h4>
+            <div>
+                <input name="name" id="search-term" placeholder="eg. Spirited Away" required
+                       class="form-control form-control-sm" type="text">
+                <button type="button" id="do-search" class="mt-2 btn btn-primary">Search</button>
+            </div>
         </form>
     </div>
     <div class="row1"></div>
     <div class="row"></div>
-
 </main>
-
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
