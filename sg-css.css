@@ -1,10 +1,18 @@
+body{
+   background-color: lightgrey;
+}
+
 p {
     font-size: 0.8em;
 }
 
+h5{
+    border : 1px solid black;
+}
+
 .card {
     min-width: 300px;
-    min-height: 500px;
+    min-height: 400px;
 }
 
 .card-deck {

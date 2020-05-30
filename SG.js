@@ -1,4 +1,3 @@
-
 "use strict";
 
 $(document).ready(function () {
@@ -32,15 +31,17 @@ $(document).ready(function () {
 
         function filterMovies() {
             let searchTerm = $('#search-term').val();
-            console.log(searchTerm);
-            for (let i = 0; i < data.length; i++){
-                if (searchTerm === data[i].title){
+            // console.log(searchTerm);
+            for (let i = 0; i < data.length; i++) {
+                if (searchTerm === data[i].title) {
                     $('.row').hide();
                     let filterMovieTitleHTML =
                         `<div class="col-sm-1">
-                                      <div class="card mt-3">
-                                           <div class="card-body pt-2">
-                                              <h5 class="card-title">${data[i].title}</h5>
+                                      <div class="card">
+                                           <div class="card-body">
+                                                <div>
+                                                    <h5 class="card-title">${data[i].title}</h5>
+                                                 </div>
                                                <p class="card-text">${data[i].description}</p>
                                                <p class="card-text">Date released: ${data[i].release_date}</p>
                                                <p class="card-text">Director: ${data[i].director}</p>
@@ -52,7 +53,8 @@ $(document).ready(function () {
                 }
             }
         }
-        $('#do-search').click(function(e){
+
+        $('#do-search').click(function (e) {
             e.preventDefault();
             filterMovies();
         });
