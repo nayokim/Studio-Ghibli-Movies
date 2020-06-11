@@ -1,5 +1,4 @@
 
-
 p {
     font-size: 0.8em;
 }
@@ -7,20 +6,20 @@ p {
 
 .logo{
     display:block;
-    max-width: 99%;
-    max-height: 99%;
+    max-width: 100%;
+    max-height: 80%;
 }
 
 .search-wrapper{
     width:40%;
     position:absolute;
-    top:99%;
-
+    top:5%;
+    margin: 0 auto;
 }
-
-/*.search-wrapper{*/
-/*    position: relative;*/
-/*}*/
+.form-control{
+    width:50%;
+    background: transparent;
+}
 
 .card {
     min-width: 300px;
