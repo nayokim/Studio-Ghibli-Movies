@@ -32,10 +32,8 @@ $(document).ready(function () {
 
         function filterMovies() {
             let searchTerm = $('#search-term').val();
-            // console.log(searchTerm);
             for (let i = 0; i < data.length; i++) {
-                if (searchTerm === data[i].title) {
-                    $('.row').hide();
+                if (searchTerm.toLowerCase() === data[i].title.toLowerCase()) {
                     let filterMovieTitleHTML =
                         `<div class="col-sm-1">
                                       <div class="card" >
@@ -56,9 +54,12 @@ $(document).ready(function () {
         }
 
         $('#do-search').click(function (e) {
+            $('.row').hide();
             e.preventDefault();
             filterMovies();
         });
+
+
     }).fail(function (error) {
         console.error(error);
     }).always(function () {
