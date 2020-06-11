@@ -16,7 +16,8 @@ $(document).ready(function () {
                                   <div class="col-sm-4">
                                       <div class="card mt-3">
                                            <div class="card-body pt-2">
-                                              <h5 class="card-title">${data[i].title}</h5>
+                                              <h5 class="card-title text-center">${data[i].title}</h5>
+                                              <hr>
                                                <p class="card-text">${data[i].description}</p>
                                                <p class="card-text">Date released: ${data[i].release_date}</p>
                                                <p class="card-text">Director: ${data[i].director}</p>
