@@ -37,7 +37,7 @@ $(document).ready(function () {
                     $('.row').hide();
                     let filterMovieTitleHTML =
                         `<div class="col-sm-1">
-                                      <div class="card" id="" >
+                                      <div class="card" >
                                            <div class="card-body">
                                                 <div>
                                                     <h5 class="card-title">${data[i].title}</h5>
