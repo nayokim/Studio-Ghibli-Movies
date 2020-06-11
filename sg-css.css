@@ -1,14 +1,26 @@
-body{
-   background-color: lightgrey;
-}
+
 
 p {
     font-size: 0.8em;
 }
 
-h5{
-    border : 1px solid black;
+
+.logo{
+    display:block;
+    max-width: 99%;
+    max-height: 99%;
 }
+
+.search-wrapper{
+    width:40%;
+    position:absolute;
+    top:99%;
+
+}
+
+/*.search-wrapper{*/
+/*    position: relative;*/
+/*}*/
 
 .card {
     min-width: 300px;
@@ -22,3 +34,4 @@ h5{
     min-height: 100%;
     margin-bottom: 50px;
 }
+
