@@ -16,7 +16,7 @@ $(document).ready(function () {
                                   <div class="col-sm-4">
                                       <div class="card mt-3">
                                            <div class="card-body pt-2">
-                                              <h5 class="card-title text-center">${data[i].title}</h5>
+                                              <h4 class="card-title text-center">${data[i].title}</h4>
                                               <hr>
                                                <p class="card-text">${data[i].description}</p>
                                                <p class="card-text">Date released: ${data[i].release_date}</p>
@@ -25,7 +25,7 @@ $(document).ready(function () {
                                             </div>
                                        </div>
                                   </div>`;
-                $('.row').append(movieTitleHTML);
+                $('.row-movies').append(movieTitleHTML);
             }
         }
 
@@ -35,11 +35,11 @@ $(document).ready(function () {
             for (let i = 0; i < data.length; i++) {
                 if (searchTerm.toLowerCase() === data[i].title.toLowerCase()) {
                     let filterMovieTitleHTML =
-                        `<div class="col-sm-1">
-                                      <div class="card" >
+                        `<div class="col-sm-3">
+                                      <div class="card"  style="20rem">
                                            <div class="card-body">
                                                 <div>
-                                                    <h5 class="card-title">${data[i].title}</h5>
+                                                    <h5 class="card-title font-weight-bold">${data[i].title}</h5>
                                                  </div>
                                                <p class="card-text">${data[i].description}</p>
                                                <p class="card-text">Date released: ${data[i].release_date}</p>
