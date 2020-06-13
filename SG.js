@@ -55,7 +55,6 @@ $(document).ready(function () {
 
         $('#do-search').click(function (e) {
             $('.row-movies').hide();
-
             e.preventDefault();
             filterMovies();
         });
